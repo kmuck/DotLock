@@ -8,4 +8,16 @@
     <UserSecretsId>cca8c2bf-9002-4499-8499-8305edd174e3</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotLock.Services.Identity\DotLock.Services.Identity.csproj" />
+    <ProjectReference Include="..\DotLock.Services.Vault\DotLock.Services.Vault.csproj" />
+    <ProjectReference Include="..\DotLock.Services.Audit\DotLock.Services.Audit.csproj" />
+    <ProjectReference Include="..\DotLock.ApiGateway\DotLock.ApiGateway.csproj" />
+    <ProjectReference Include="..\DotLock.Clients.Web\DotLock.Clients.Web.csproj" />
+  </ItemGroup>
+
 </Project>
