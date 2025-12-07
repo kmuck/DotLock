@@ -3,13 +3,13 @@ var builder = DistributedApplication.CreateBuilder(args);
 // PostgreSQL Database
 var postgres = builder.AddPostgres("postgres");
 
-var identityDb = postgres.AddDatabase("identity-db");
+var authDb = postgres.AddDatabase("auth-db");
 var vaultDb = postgres.AddDatabase("vault-db");
 
 // Identity service
-var identityService = builder
-    .AddProject<Projects.DotLock_Services_Identity>("identity-service")
-    .WithReference(identityDb);
+var authService = builder
+    .AddProject<Projects.DotLock_Services_Auth>("auth-service")
+    .WithReference(authDb);
 
 // Vault service
 var vaultService = builder
@@ -23,7 +23,7 @@ var auditService = builder
 // API Gateway
 var apiGateway = builder
     .AddProject<Projects.DotLock_ApiGateway>("api-gateway")
-    .WithReference(identityService)
+    .WithReference(authService)
     .WithReference(vaultService)
     .WithReference(auditService);
 
