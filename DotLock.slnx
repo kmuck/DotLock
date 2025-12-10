@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/DotLock.ApiGateway/DotLock.ApiGateway.csproj" />
+    <Project Path="src/DotLock.AppHost/DotLock.AppHost.csproj" />
+    <Project Path="src/DotLock.Clients.Web/DotLock.Clients.Web.csproj" />
+    <Project Path="src/DotLock.Services.Audit/DotLock.Services.Audit.csproj" />
+    <Project Path="src/DotLock.Services.Auth/DotLock.Services.Auth.csproj" />
+    <Project Path="src/DotLock.Services.Vault/DotLock.Services.Vault.csproj" />
+    <Project Path="src/DotLock.Shared.Contracts/DotLock.Shared.Contracts.csproj" />
+    <Project Path="src/DotLock.Shared.Defaults/DotLock.Shared.Defaults.csproj" />
+  </Folder>
+</Solution>
