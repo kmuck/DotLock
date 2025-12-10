@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotLock.Clients.Web\DotLock.Clients.Web.csproj" />
+    <ProjectReference Include="..\DotLock.ApiGateway\DotLock.ApiGateway.csproj" />
     <ProjectReference Include="..\DotLock.Services.Auth\DotLock.Services.Auth.csproj" />
     <ProjectReference Include="..\DotLock.Services.Vault\DotLock.Services.Vault.csproj" />
     <ProjectReference Include="..\DotLock.Services.Audit\DotLock.Services.Audit.csproj" />
-    <ProjectReference Include="..\DotLock.ApiGateway\DotLock.ApiGateway.csproj" />
-    <ProjectReference Include="..\DotLock.Clients.Web\DotLock.Clients.Web.csproj" />
   </ItemGroup>
 
 </Project>

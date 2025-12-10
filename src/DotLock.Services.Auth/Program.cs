@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-
 using DotLock.Services.Auth.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
 
 // OpenAPI documentation
 builder.Services.AddOpenApi();
@@ -15,5 +16,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
     app.MapOpenApi();
+
+app.MapGet("/auth/ping", () => "pong");
 
 app.Run();
