@@ -14,7 +14,7 @@ Tech stack includes:
 ## Architecture Overview
 
 Services:
-- **Identity Service:** authentication & user lifecycle
+- **Auth Service:** authentication & user lifecycle
 - **Vault Service:** encrypted vault storage (ciphertext only)
 - **Audit Service:** security events & activity logging
 
