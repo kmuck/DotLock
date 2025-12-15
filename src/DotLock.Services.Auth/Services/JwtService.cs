@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace DotLock.Services.Auth.Services;
 
-public class JwtService
+public sealed class JwtService
 {
     private readonly RSA _rsa;
     public string KeyId { get; }
