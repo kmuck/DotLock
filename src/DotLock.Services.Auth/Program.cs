@@ -18,7 +18,7 @@ builder.Services.AddSingleton<OpaqueService>();
 
 var app = builder.Build();
 
-app.MapGet("/ping", () => "pong");
+app.MapDefaultEndpoints();
 
 app.MapPost("/register/start", async (RegisterStartRequest request, OpaqueService opaque, AuthDbContext db) =>
 {
